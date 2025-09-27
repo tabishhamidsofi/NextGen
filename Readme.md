@@ -3,28 +3,6 @@
 
 A comprehensive system for comparing AI model responses across different providers (Groq Cloud and Ollama Local).
 
-## Project Structure
-
-```
-├── main.py                 # Main Streamlit application
-├── config/
-│   ├── __init__.py
-│   └── settings.py        # Configuration and constants
-├── models/
-│   ├── __init__.py
-│   ├── base.py           # Base classes and data models
-│   ├── groq_agent.py     # Groq model implementation
-│   └── ollama_agent.py   # Ollama model implementation
-├── ui/
-│   ├── __init__.py
-│   ├── components.py     # Reusable UI components
-│   └── styles.py         # CSS styles and styling functions
-├── utils/
-│   ├── __init__.py
-│   ├── processing.py     # Core processing logic
-│   └── visualization.py  # Chart and visualization functions
-└── requirements.txt       # Dependencies
-```
 
 ## Features
 
