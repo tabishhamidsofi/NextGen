@@ -214,7 +214,10 @@ def create_scoring_matrix(all_scores: List, model_configs: List[Dict]) -> pd.Dat
     
     try:
         for i, config in enumerate(model_configs):
-            evaluator_name = f"{config['model_name']} ({config['provider'].title()})"
+            if isinstance(config, Dict):
+                evaluator_name = f"{config['model_name']} ({config['provider'].title()})"
+            else:
+                evaluator_name = str(config)
             row = {"Evaluator": evaluator_name}
             
             if i < len(all_scores):
